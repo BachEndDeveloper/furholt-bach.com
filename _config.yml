@@ -103,6 +103,7 @@ defaults:
       type: pages
     values:
       layout: single
+      classes: wide
       author_profile: true
   # _portfolio
   - scope:
@@ -110,6 +111,7 @@ defaults:
       type: portfolio
     values:
       layout: single
+      classes: wide
       author_profile: false
       share: true
 
