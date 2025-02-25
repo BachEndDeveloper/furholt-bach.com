@@ -61,7 +61,7 @@ plugins:
 author:
   name   : "Martin Furholt Bach"
   avatar : "/assets/images/prof-pic.jpg"
-  bio    : "Software Architect, Developer, Tech Enthusiast.<br/> I love to learn and share my knowledge with others.<br/>I can help you with your next project and your technology strategy."
+  bio    : "Software Architect, Developer, Tech Enthusiast.<br/> Dad, Husband<br/>Custom keyboard enthusiast"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
@@ -94,7 +94,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: true
+      comments: false
       share: true
       related: true
   # _pages
