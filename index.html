@@ -58,12 +58,12 @@ feature_row:
     {% endif %}
     <div class="feature__item{% if include.type %}--{{ include.type }}{% endif %}">
       <div class="archive__item">
-        {% if post.image_path %}
+        {% if post.header.image %}
           <div class="archive__item-teaser">
-            <img src="{{ f.image_path | relative_url }}"
-                 alt="{% if f.alt %}{{ f.alt }}{% endif %}">
-            {% if post.image_caption %}
-              <span class="archive__item-caption">{{ post.image_caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
+            <img src="{{ post.header.image | relative_url }}"
+                 alt="{% if post.header.image_alt %}{{ post.header.image_alt }}{% endif %}">
+            {% if post.header.image_description %}
+              <span class="archive__item-caption">{{ post.header.image_description | markdownify | remove: "<p>" | remove: "</p>" }}</span>
             {% endif %}
           </div>
         {% endif %}
