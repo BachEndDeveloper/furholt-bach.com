@@ -23,15 +23,34 @@ twitter_username: username
 github_username: bachenddeveloper
 minimal_mistakes_skin: dark
 search: true
+breadcrumbs : false
 
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
 #theme: minimal-mistakes-jekyll
 # Outputting
-permalink: /:categories/:title/
+permalink: /:collection/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
+
+pagination:
+  # Set enabled to true to use paginate v2
+  enabled: true
+  debug: false
+  collection: 'posts'
+  per_page: 10
+  permalink: '/page/:num/'
+  title: ':title - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+  category: 'posts'
+  tag: ''
+  locale: ''
+  trail:
+    before: 2
+    after: 2
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 include:
@@ -61,7 +80,7 @@ plugins:
 author:
   name   : "Martin Furholt Bach"
   avatar : "/assets/images/prof-pic.jpg"
-  bio    : "Software Architect, Developer,<br />Tech Enthusiast."
+  bio    : "Technology leader,<br/>Software Architect & Developer."
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
@@ -92,11 +111,12 @@ defaults:
       type: posts
     values:
       layout: single
+      classes: wide
       author_profile: true
       read_time: true
       comments: false
       share: true
-      related: true
+      related: false
   # _pages
   - scope:
       path: "_pages"
