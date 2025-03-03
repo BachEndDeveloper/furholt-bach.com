@@ -34,25 +34,6 @@ permalink: /:collection/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 
-pagination:
-  # Set enabled to true to use paginate v2
-  enabled: true
-  debug: false
-  collection: 'posts'
-  per_page: 10
-  permalink: '/page/:num/'
-  title: ':title - page :num'
-  limit: 0
-  sort_field: 'date'
-  sort_reverse: true
-  category: 'posts'
-  tag: ''
-  locale: ''
-  trail:
-    before: 2
-    after: 2
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
 include:
   - _pages
   - _portfolio
