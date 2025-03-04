@@ -11,6 +11,8 @@ author_profile: true
 header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/banner.png
+excerpt: >
+  <small>Technology leadership, software architecture, and development.</small>
 intro:
   - excerpt: 'Welcome to Furholt Bach, here you can connect with me and read my blog. Centered with `type="center"`'
 feature_row:
@@ -31,7 +33,7 @@ feature_row:
   - image_path: '/assets/images/speaking.png'
     alt: "100% free"
     title: "What can I do for you?"
-    excerpt: "I offer expertise in technology leadership and strategy, cloud and AI adoption, software architecture, development, and DevOps."
+    excerpt: "I have experience in technology leadership and strategy, cloud and AI adoption, software architecture, development, DevOps and more."
     url: "/services/"
     btn_class: "btn--primary"
     btn_label: "Learn more"  
@@ -72,7 +74,7 @@ feature_row:
               
           {% if post.url %}
             &nbsp;
-            <p><a href="{{ post.url | relative_url }}" class="btn btn--primary">{{ post.btn_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a></p>
+            <p><a href="{{ post.url | relative_url }}" class="btn btn--primary">{{ post.btn_label | default: site.data.ui-text[site.locale].more_label | default: "Read" }}</a></p>
           {% endif %}
         </div>
       </div>
