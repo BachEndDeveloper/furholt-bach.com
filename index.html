@@ -20,21 +20,21 @@ excerpt: >
 intro:
   - excerpt: 'Nullam suscipit et nam, tellus velit pellentesque at malesuada, enim eaque. Quis nulla, netus tempor in diam gravida tincidunt, *proin faucibus* voluptate felis id sollicitudin. Centered with `type="center"`'
 feature_row:
-  - image_path: '/assets/images/frontpage-profile-picture.png'
+  - image_path: '/assets/images/frontpage-profile-picture-resized.png'
     alt: "customizable"
     title: "About"
     excerpt: "Everything from the menus, sidebars, comments, and more can be configured or set with YAML Front Matter."
     url: "/docs/configuration/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
-  - image_path: '/assets/images/blog-default-1.png'
+  - image_path: '/assets/images/blog-1.png'
     alt: "fully responsive"
     title: "Blog"
     excerpt: "Built with HTML5 + CSS3. All layouts are fully responsive with helpers to augment your content."
     url: "/docs/layouts/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
-  - image_path: '/assets/images/speaking-4.png'
+  - image_path: '/assets/images/speaking.png'
     alt: "100% free"
     title: "Projects"
     excerpt: "Free to use however you want under the MIT License. Clone it, fork it, customize it... whatever!"
@@ -60,7 +60,7 @@ feature_row:
     <div class="feature__item{% if include.type %}--{{ include.type }}{% endif %}">
       <div class="archive__item">
           <div class="archive__item-teaser">
-            <img src="{% if post.header.image %}{{ post.header.image | relative_url }}{% else %}{{ '/assets/images/blog-default-4.png' | relative_url }} {% endif %}"
+            <img src="{% if post.header.image %}{{ post.header.image | relative_url }}{% else %}{{ '/assets/images/blog-4.png' | relative_url }} {% endif %}"
                  alt="{% if post.header.image_alt %}{{ post.header.image_alt }}{% endif %}">
             {% if post.header.image_description %}
               <span class="archive__item-caption">{{ post.header.image_description | markdownify | remove: "<p>" | remove: "</p>" }}</span>
