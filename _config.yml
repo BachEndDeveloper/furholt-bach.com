@@ -36,14 +36,14 @@ paginate_path: /page:num/
 
 include:
   - _pages
-  - _portfolio
+  - _services
   - _indcludes
   - _layouts
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
+# exclude
 #   - Gemfile
 #   - Gemfile.lock
 #   - node_modules
@@ -109,10 +109,10 @@ defaults:
       layout: single
       classes: wide
       author_profile: true
-  # _portfolio
+  # _services
   - scope:
       path: ""
-      type: portfolio
+      type: services
     values:
       layout: single
       classes: wide
@@ -120,7 +120,7 @@ defaults:
       share: true
 
 collections:
-  portfolio:
+  services:
     output: true
     permalink: /:collection/:path/
 
